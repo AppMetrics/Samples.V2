@@ -9,11 +9,14 @@
   </ItemGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DefineConstants>$(DefineConstants);HOSTING_OPTIONS;REPORTING</DefineConstants>
+    <!--<DefineConstants>$(DefineConstants);HOSTING_OPTIONS;REPORTING</DefineConstants>-->
+    <DefineConstants>$(DefineConstants);REPORTING</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DefineConstants>$(DefineConstants);HOSTING_OPTIONS;REPORTING</DefineConstants>
+    <!--<DefineConstants>$(DefineConstants);HOSTING_OPTIONS;REPORTING</DefineConstants>-->
+    <DefineConstants>$(DefineConstants);REPORTING</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>
