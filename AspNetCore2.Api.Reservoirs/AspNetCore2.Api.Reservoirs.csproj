@@ -2,26 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-	<LangVersion>latest</LangVersion>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <!--<DefineConstants>$(DefineConstants);HOSTING_OPTIONS;REPORTING</DefineConstants>-->
-    <DefineConstants>$(DefineConstants);REPORTING</DefineConstants>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <!--<DefineConstants>$(DefineConstants);HOSTING_OPTIONS;REPORTING</DefineConstants>-->
-    <DefineConstants>$(DefineConstants);REPORTING</DefineConstants>
-  </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="App.Metrics.AspNetCore.Mvc" Version="2.0.0-alpha" />
     <PackageReference Include="App.Metrics.Reporting.Console" Version="2.0.0-alpha" />
+    <PackageReference Include="App.Metrics.Reporting.InfluxDB" Version="2.0.0-alpha" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
   </ItemGroup>
 
