@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{59CC382A-A9FE-4BAE-B588-A7EBEFD4E4DA}</ProjectGuid>
+    <ProjectGuid>{BEB1720B-330E-4972-BDEA-5050948E26CD}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Net452.Health.Console.QuickStart</RootNamespace>
-    <AssemblyName>Net452.Health.Console.QuickStart</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>Net461.Health.MicrosoftDI.Console.QuickStart</RootNamespace>
+    <AssemblyName>Net461.Health.MicrosoftDI.Console.QuickStart</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="App.Metrics.Health, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
+      <HintPath>..\packages\App.Metrics.Health.2.0.0-beta-0062\lib\net452\App.Metrics.Health.dll</HintPath>
+    </Reference>
     <Reference Include="App.Metrics.Health.Abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
       <HintPath>..\packages\App.Metrics.Health.Abstractions.2.0.0-beta-0062\lib\net452\App.Metrics.Health.Abstractions.dll</HintPath>
     </Reference>
@@ -48,11 +52,26 @@
     <Reference Include="App.Metrics.Health.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
       <HintPath>..\packages\App.Metrics.Health.Core.2.0.0-beta-0062\lib\net452\App.Metrics.Health.Core.dll</HintPath>
     </Reference>
+    <Reference Include="App.Metrics.Health.Extensions.DependencyInjection, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
+      <HintPath>..\packages\App.Metrics.Health.Extensions.DependencyInjection.2.0.0-beta-0035\lib\netstandard2.0\App.Metrics.Health.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
     <Reference Include="App.Metrics.Health.Formatters.Ascii, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
       <HintPath>..\packages\App.Metrics.Health.Formatters.Ascii.2.0.0-beta-0062\lib\net452\App.Metrics.Health.Formatters.Ascii.dll</HintPath>
     </Reference>
     <Reference Include="App.Metrics.Health.Formatters.Json, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
       <HintPath>..\packages\App.Metrics.Health.Formatters.Json.2.0.0-beta-0062\lib\net452\App.Metrics.Health.Formatters.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DotNet.PlatformAbstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.DotNet.PlatformAbstractions.2.0.0\lib\net45\Microsoft.DotNet.PlatformAbstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.2.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyModel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyModel.2.0.0\lib\net451\Microsoft.Extensions.DependencyModel.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -81,6 +100,12 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HealthChecks\HealthChecks.csproj">
+      <Project>{13279f56-b959-49db-a699-dce563a08437}</Project>
+      <Name>HealthChecks</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
