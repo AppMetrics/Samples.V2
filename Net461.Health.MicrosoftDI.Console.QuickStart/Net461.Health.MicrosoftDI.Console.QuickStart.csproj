@@ -35,34 +35,34 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="App.Metrics.Health, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
-      <HintPath>..\packages\App.Metrics.Health.2.0.0-beta-0062\lib\net452\App.Metrics.Health.dll</HintPath>
+      <HintPath>..\packages\App.Metrics.Health.2.0.0-preview1\lib\net452\App.Metrics.Health.dll</HintPath>
     </Reference>
     <Reference Include="App.Metrics.Health.Abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
-      <HintPath>..\packages\App.Metrics.Health.Abstractions.2.0.0-beta-0062\lib\net452\App.Metrics.Health.Abstractions.dll</HintPath>
+      <HintPath>..\packages\App.Metrics.Health.Abstractions.2.0.0-preview1\lib\net452\App.Metrics.Health.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="App.Metrics.Health.Checks.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
-      <HintPath>..\packages\App.Metrics.Health.Checks.Http.2.0.0-beta-0062\lib\net452\App.Metrics.Health.Checks.Http.dll</HintPath>
+      <HintPath>..\packages\App.Metrics.Health.Checks.Http.2.0.0-preview1\lib\net452\App.Metrics.Health.Checks.Http.dll</HintPath>
     </Reference>
     <Reference Include="App.Metrics.Health.Checks.Network, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
-      <HintPath>..\packages\App.Metrics.Health.Checks.Network.2.0.0-beta-0062\lib\net452\App.Metrics.Health.Checks.Network.dll</HintPath>
+      <HintPath>..\packages\App.Metrics.Health.Checks.Network.2.0.0-preview1\lib\net452\App.Metrics.Health.Checks.Network.dll</HintPath>
     </Reference>
     <Reference Include="App.Metrics.Health.Checks.Process, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
-      <HintPath>..\packages\App.Metrics.Health.Checks.Process.2.0.0-beta-0062\lib\net452\App.Metrics.Health.Checks.Process.dll</HintPath>
+      <HintPath>..\packages\App.Metrics.Health.Checks.Process.2.0.0-preview1\lib\net452\App.Metrics.Health.Checks.Process.dll</HintPath>
     </Reference>
     <Reference Include="App.Metrics.Health.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
-      <HintPath>..\packages\App.Metrics.Health.Core.2.0.0-beta-0062\lib\net452\App.Metrics.Health.Core.dll</HintPath>
+      <HintPath>..\packages\App.Metrics.Health.Core.2.0.0-preview1\lib\net452\App.Metrics.Health.Core.dll</HintPath>
     </Reference>
     <Reference Include="App.Metrics.Health.Extensions.DependencyInjection, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
-      <HintPath>..\packages\App.Metrics.Health.Extensions.DependencyInjection.2.0.0-beta-0035\lib\netstandard2.0\App.Metrics.Health.Extensions.DependencyInjection.dll</HintPath>
+      <HintPath>..\packages\App.Metrics.Health.Extensions.DependencyInjection.2.0.0-preview1\lib\netstandard2.0\App.Metrics.Health.Extensions.DependencyInjection.dll</HintPath>
     </Reference>
     <Reference Include="App.Metrics.Health.Formatters.Ascii, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
-      <HintPath>..\packages\App.Metrics.Health.Formatters.Ascii.2.0.0-beta-0062\lib\net452\App.Metrics.Health.Formatters.Ascii.dll</HintPath>
+      <HintPath>..\packages\App.Metrics.Health.Formatters.Ascii.2.0.0-preview1\lib\net452\App.Metrics.Health.Formatters.Ascii.dll</HintPath>
     </Reference>
     <Reference Include="App.Metrics.Health.Formatters.Json, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
-      <HintPath>..\packages\App.Metrics.Health.Formatters.Json.2.0.0-beta-0062\lib\net452\App.Metrics.Health.Formatters.Json.dll</HintPath>
+      <HintPath>..\packages\App.Metrics.Health.Formatters.Json.2.0.0-preview1\lib\net452\App.Metrics.Health.Formatters.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.DotNet.PlatformAbstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.DotNet.PlatformAbstractions.2.0.0\lib\net45\Microsoft.DotNet.PlatformAbstractions.dll</HintPath>
+    <Reference Include="Microsoft.DotNet.PlatformAbstractions, Version=2.0.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.DotNet.PlatformAbstractions.2.0.4\lib\net45\Microsoft.DotNet.PlatformAbstractions.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Extensions.DependencyInjection, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.2.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.dll</HintPath>
@@ -70,8 +70,8 @@
     <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.DependencyModel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.DependencyModel.2.0.0\lib\net451\Microsoft.Extensions.DependencyModel.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.DependencyModel, Version=2.0.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyModel.2.0.4\lib\net451\Microsoft.Extensions.DependencyModel.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>

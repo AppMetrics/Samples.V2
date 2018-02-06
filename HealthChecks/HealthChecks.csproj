@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="App.Metrics.Health.Abstractions" Version="2.0.0-beta-0062" />
+    <PackageReference Include="App.Metrics.Health.Abstractions" Version="2.0.0-preview1" />
   </ItemGroup>
   
 </Project>

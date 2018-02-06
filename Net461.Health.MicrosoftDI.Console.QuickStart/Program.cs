@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using App.Metrics.Health;
 using App.Metrics.Health.Builder;
 using App.Metrics.Health.Formatters;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyModel;
 
 namespace Net461.Health.MicrosoftDI.Console.QuickStart
 {
@@ -17,7 +19,7 @@ namespace Net461.Health.MicrosoftDI.Console.QuickStart
         {
             var services = new ServiceCollection();
             var healthBuilder = new HealthBuilder()
-                .HealthChecks.RegisterFromAssembly(services)
+                .HealthChecks.RegisterFromAssembly(services, DependencyContext.Load(Assembly.GetAssembly(typeof(Program))))
                 .HealthChecks.AddCheck<SampleHealthCheck>()
                 .HealthChecks.AddCheck("Healthy Check",
                     () => new ValueTask<HealthCheckResult>(HealthCheckResult.Healthy()))
