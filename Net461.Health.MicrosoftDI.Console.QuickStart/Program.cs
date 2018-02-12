@@ -19,8 +19,7 @@ namespace Net461.Health.MicrosoftDI.Console.QuickStart
         {
             var services = new ServiceCollection();
             var healthBuilder = new HealthBuilder()
-                .HealthChecks.RegisterFromAssembly(services, DependencyContext.Load(Assembly.GetAssembly(typeof(Program))))
-                .HealthChecks.AddCheck<SampleHealthCheck>()
+                .HealthChecks.RegisterFromAssembly(services, DependencyContext.Load(Assembly.Load(typeof(Program).Assembly.GetName().Name)))
                 .HealthChecks.AddCheck("Healthy Check",
                     () => new ValueTask<HealthCheckResult>(HealthCheckResult.Healthy()))
                 .HealthChecks.AddCheck("Degraded Check",
@@ -32,7 +31,7 @@ namespace Net461.Health.MicrosoftDI.Console.QuickStart
                 .HealthChecks.AddProcessPhysicalMemoryCheck("Working Set", 300)
                 .HealthChecks.AddPingCheck("google ping", "google.com", TimeSpan.FromSeconds(10))
                 .HealthChecks.AddHttpGetCheck("github", new Uri("https://github.com/"), TimeSpan.FromSeconds(10))
-                .Build();
+                .BuildAndAddTo(services);
 
             services.AddHealth(healthBuilder);
 
