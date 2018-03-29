@@ -23,7 +23,7 @@ namespace AspNetCore2.Api.Reservoirs
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc(options => options.AddMetricsResourceFilter());
+            services.AddMvc().AddMetrics();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
