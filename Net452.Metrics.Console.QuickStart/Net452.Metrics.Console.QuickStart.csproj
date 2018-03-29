@@ -36,22 +36,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="App.Metrics, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
-      <HintPath>..\packages\App.Metrics.2.0.0-preview1\lib\net452\App.Metrics.dll</HintPath>
+      <HintPath>..\packages\App.Metrics.2.0.0\lib\net452\App.Metrics.dll</HintPath>
     </Reference>
     <Reference Include="App.Metrics.Abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
-      <HintPath>..\packages\App.Metrics.Abstractions.2.0.0-preview1\lib\netstandard1.1\App.Metrics.Abstractions.dll</HintPath>
+      <HintPath>..\packages\App.Metrics.Abstractions.2.0.0\lib\netstandard1.1\App.Metrics.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="App.Metrics.Concurrency, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
       <HintPath>..\packages\App.Metrics.Concurrency.2.0.0\lib\netstandard1.1\App.Metrics.Concurrency.dll</HintPath>
     </Reference>
     <Reference Include="App.Metrics.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
-      <HintPath>..\packages\App.Metrics.Core.2.0.0-preview1\lib\net452\App.Metrics.Core.dll</HintPath>
+      <HintPath>..\packages\App.Metrics.Core.2.0.0\lib\net452\App.Metrics.Core.dll</HintPath>
     </Reference>
     <Reference Include="App.Metrics.Formatters.Ascii, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
-      <HintPath>..\packages\App.Metrics.Formatters.Ascii.2.0.0-preview1\lib\net452\App.Metrics.Formatters.Ascii.dll</HintPath>
+      <HintPath>..\packages\App.Metrics.Formatters.Ascii.2.0.0\lib\net452\App.Metrics.Formatters.Ascii.dll</HintPath>
     </Reference>
     <Reference Include="App.Metrics.Formatters.Json, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
-      <HintPath>..\packages\App.Metrics.Formatters.Json.2.0.0-preview1\lib\net452\App.Metrics.Formatters.Json.dll</HintPath>
+      <HintPath>..\packages\App.Metrics.Formatters.Json.2.0.0\lib\net452\App.Metrics.Formatters.Json.dll</HintPath>
     </Reference>
     <Reference Include="App.Metrics.Health, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
       <HintPath>..\packages\App.Metrics.Health.2.0.0-beta-0061\lib\net452\App.Metrics.Health.dll</HintPath>
@@ -68,8 +68,8 @@
     <Reference Include="App.Metrics.Health.Formatters.Json, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
       <HintPath>..\packages\App.Metrics.Health.Formatters.Json.2.0.0-beta-0061\lib\net452\App.Metrics.Health.Formatters.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Collections" />
