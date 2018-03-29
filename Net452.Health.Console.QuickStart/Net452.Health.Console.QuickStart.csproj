@@ -34,31 +34,31 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="App.Metrics.Health, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
-      <HintPath>..\packages\App.Metrics.Health.2.0.0-preview1\lib\net452\App.Metrics.Health.dll</HintPath>
+      <HintPath>..\packages\App.Metrics.Health.2.0.0\lib\net452\App.Metrics.Health.dll</HintPath>
     </Reference>
     <Reference Include="App.Metrics.Health.Abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
-      <HintPath>..\packages\App.Metrics.Health.Abstractions.2.0.0-preview1\lib\net452\App.Metrics.Health.Abstractions.dll</HintPath>
+      <HintPath>..\packages\App.Metrics.Health.Abstractions.2.0.0\lib\net452\App.Metrics.Health.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="App.Metrics.Health.Checks.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
-      <HintPath>..\packages\App.Metrics.Health.Checks.Http.2.0.0-preview1\lib\net452\App.Metrics.Health.Checks.Http.dll</HintPath>
+      <HintPath>..\packages\App.Metrics.Health.Checks.Http.2.0.0\lib\net452\App.Metrics.Health.Checks.Http.dll</HintPath>
     </Reference>
     <Reference Include="App.Metrics.Health.Checks.Network, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
-      <HintPath>..\packages\App.Metrics.Health.Checks.Network.2.0.0-preview1\lib\net452\App.Metrics.Health.Checks.Network.dll</HintPath>
+      <HintPath>..\packages\App.Metrics.Health.Checks.Network.2.0.0\lib\net452\App.Metrics.Health.Checks.Network.dll</HintPath>
     </Reference>
     <Reference Include="App.Metrics.Health.Checks.Process, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
-      <HintPath>..\packages\App.Metrics.Health.Checks.Process.2.0.0-preview1\lib\net452\App.Metrics.Health.Checks.Process.dll</HintPath>
+      <HintPath>..\packages\App.Metrics.Health.Checks.Process.2.0.0\lib\net452\App.Metrics.Health.Checks.Process.dll</HintPath>
     </Reference>
     <Reference Include="App.Metrics.Health.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
-      <HintPath>..\packages\App.Metrics.Health.Core.2.0.0-preview1\lib\net452\App.Metrics.Health.Core.dll</HintPath>
+      <HintPath>..\packages\App.Metrics.Health.Core.2.0.0\lib\net452\App.Metrics.Health.Core.dll</HintPath>
     </Reference>
     <Reference Include="App.Metrics.Health.Formatters.Ascii, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
-      <HintPath>..\packages\App.Metrics.Health.Formatters.Ascii.2.0.0-preview1\lib\net452\App.Metrics.Health.Formatters.Ascii.dll</HintPath>
+      <HintPath>..\packages\App.Metrics.Health.Formatters.Ascii.2.0.0\lib\net452\App.Metrics.Health.Formatters.Ascii.dll</HintPath>
     </Reference>
     <Reference Include="App.Metrics.Health.Formatters.Json, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812, processorArchitecture=MSIL">
-      <HintPath>..\packages\App.Metrics.Health.Formatters.Json.2.0.0-preview1\lib\net452\App.Metrics.Health.Formatters.Json.dll</HintPath>
+      <HintPath>..\packages\App.Metrics.Health.Formatters.Json.2.0.0\lib\net452\App.Metrics.Health.Formatters.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Collections" />
