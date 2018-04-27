@@ -46,9 +46,10 @@ namespace AspNetCore2.Api.Reservoirs
             {
                 var uniform = httpClient.GetStringAsync("api/reservoirs/uniform");
                 var exponentiallyDecaying = httpClient.GetStringAsync("api/reservoirs/exponentially-decaying");
+                var exponentiallyDecayingLowWeight = httpClient.GetStringAsync("api/reservoirs/exponentially-decaying-low-weight");
                 var slidingWindow = httpClient.GetStringAsync("api/reservoirs/sliding-window");
 
-                await Task.WhenAll(uniform, exponentiallyDecaying, slidingWindow);
+                await Task.WhenAll(uniform, exponentiallyDecaying, exponentiallyDecayingLowWeight, slidingWindow);
             });
 
             requestSamplesScheduler.Start();

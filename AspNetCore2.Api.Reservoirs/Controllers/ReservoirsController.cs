@@ -26,6 +26,17 @@ namespace AspNetCore2.Api.Reservoirs.Controllers
             return "OK";
         }
 
+        [HttpGet("exponentially-decaying-low-weight")]
+        public async Task<string> ExponentiallyDecayingLowWeight()
+        {
+            using (_metrics.Measure.Timer.Time(MetricsRegistry.TimerUsingForwardDecayingLowWeightThresholdReservoir))
+            {
+                await Delay();
+            }
+
+            return "OK";
+        }
+
         [HttpGet("sliding-window")]
         public async Task<string> SlidingWindow()
         {
