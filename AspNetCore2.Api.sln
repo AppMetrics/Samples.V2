@@ -7,6 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore2.Api.QuickStart"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore2.Api.Reservoirs", "AspNetCore2.Api.Reservoirs\AspNetCore2.Api.Reservoirs.csproj", "{C2D96C48-CF86-44B9-984D-B7B97F00314E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Grafana", "Grafana", "{F4AC9D38-CC5C-4DA2-A0A8-06B47BDE8FD3}"
+	ProjectSection(SolutionItems) = preProject
+		Grafana\AspNetCore2.Api.Reservoirs.json = Grafana\AspNetCore2.Api.Reservoirs.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

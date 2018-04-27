@@ -50,7 +50,11 @@ namespace AspNetCore2.Api.Reservoirs.Controllers
 
         private Task Delay()
         {
-            return Task.Delay(DateTime.Now.Second, HttpContext.RequestAborted);
+            var second = DateTime.Now.Second;
+
+            return second <= 30 
+                ? Task.Delay(TimeSpan.FromMilliseconds(10), HttpContext.RequestAborted) 
+                : Task.Delay(TimeSpan.FromMilliseconds(100), HttpContext.RequestAborted);
         }
     }
 }
