@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Grafana", "Grafana", "{F4AC
 		Grafana\AspNetCore2.Api.Reservoirs.json = Grafana\AspNetCore2.Api.Reservoirs.json
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore2.VersionedApi.QuickStart", "AspNetCore2.VersionedApi.QuickStart\AspNetCore2.VersionedApi.QuickStart.csproj", "{EFA1D587-6974-4552-8E6B-2A71513FC250}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{C2D96C48-CF86-44B9-984D-B7B97F00314E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2D96C48-CF86-44B9-984D-B7B97F00314E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2D96C48-CF86-44B9-984D-B7B97F00314E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFA1D587-6974-4552-8E6B-2A71513FC250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFA1D587-6974-4552-8E6B-2A71513FC250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFA1D587-6974-4552-8E6B-2A71513FC250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFA1D587-6974-4552-8E6B-2A71513FC250}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
