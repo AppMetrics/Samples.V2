@@ -21,13 +21,13 @@ namespace AspNetCore2.VersionedApi.QuickStart
                 .AddApiVersioning(options =>
                 {
                     options.AssumeDefaultVersionWhenUnspecified = true;
-                    options.DefaultApiVersion = ApiVersion.Parse("1");
+                    options.DefaultApiVersion = ApiVersion.Parse("1.1");
                     options.ReportApiVersions = true;
                 });
 
             services
                 .AddMvcCore()
-                .AddVersionedApiExplorer(o => o.GroupNameFormat = "'v'V");
+                .AddVersionedApiExplorer(o => o.GroupNameFormat = "v'VVV");
 
             services
                 .AddMvc()
