@@ -3,6 +3,7 @@ using App.Metrics.Infrastructure;
 using App.Metrics.ReservoirSampling.ExponentialDecay;
 using App.Metrics.ReservoirSampling.SlidingWindow;
 using App.Metrics.ReservoirSampling.Uniform;
+using App.Metrics.Scheduling;
 using App.Metrics.Timer;
 
 namespace AspNetCore2.Api.Reservoirs
@@ -37,7 +38,7 @@ namespace AspNetCore2.Api.Reservoirs
             {
                 Context = Context,
                 Name = "exponentially-decaying-low-weight",
-                Reservoir = () => new ForwardDecayingLowWeightThresholdReservoir(100, 0.1, 0.001, new StopwatchClock(), new FixedPeriodReservoirRescaleScheduler(TimeSpan.FromSeconds(30)))
+                Reservoir = () => new DefaultForwardDecayingReservoir(100, 0.1, 0.001, new StopwatchClock(), new DefaultReservoirRescaleScheduler(TimeSpan.FromSeconds(30)))
             };
     }
 }
