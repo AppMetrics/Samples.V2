@@ -25,7 +25,7 @@
     <PackageReference Include="App.Metrics.Health.Checks.Http" Version="2.1.0-*" />
     <PackageReference Include="App.Metrics.Health.Checks.Network" Version="2.1.0-*" />
     <PackageReference Include="App.Metrics.Health.Checks.Process" Version="2.1.0-*" />
-    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.1" />
   </ItemGroup>
 
   <ItemGroup>
