@@ -23,8 +23,8 @@ namespace AspNetCore2.Api.Reservoirs
                                                                                    {
                                                                                        Context = Context,
                                                                                        Name = "exponentially-decaying",
-                                                                                       Reservoir = () => new DefaultForwardDecayingReservoir()
-                                                                                   };
+            Reservoir = () => new DefaultForwardDecayingReservoir(100, 0.1, 0.0, new StopwatchClock(), new DefaultReservoirRescaleScheduler(TimeSpan.FromSeconds(30)))
+        };
 
         public static TimerOptions TimerUsingSlidingWindowReservoir = new TimerOptions
                                                                       {
@@ -38,7 +38,7 @@ namespace AspNetCore2.Api.Reservoirs
             {
                 Context = Context,
                 Name = "exponentially-decaying-low-weight",
-                Reservoir = () => new DefaultForwardDecayingReservoir(100, 0.1, 0.001, new StopwatchClock(), new DefaultReservoirRescaleScheduler(TimeSpan.FromSeconds(30)))
+                Reservoir = () => new DefaultForwardDecayingReservoir() // min weight of 0.001 applied by default
             };
     }
 }
