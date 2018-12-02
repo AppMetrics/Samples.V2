@@ -20,14 +20,10 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="App.Metrics" Version="3.0.0-*" />
-		<PackageReference Include="App.Metrics.AspNetCore.Mvc" Version="3.0.0-*" />
-		<PackageReference Include="App.Metrics.Reporting.Console" Version="3.0.0-*" />
+		<PackageReference Include="App.Metrics" Version="3.0.0" />
+		<PackageReference Include="App.Metrics.AspNetCore.Mvc" Version="3.0.0" />
+		<PackageReference Include="App.Metrics.Reporting.Console" Version="3.0.0" />
 		<PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.1" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
 	</ItemGroup>
 
 </Project>
