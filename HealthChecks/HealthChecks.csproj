@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="App.Metrics.Health.Abstractions" Version="2.1.0-alpha-0101" />
+    <PackageReference Include="App.Metrics.Health.Abstractions" Version="2.1.0" />
   </ItemGroup>
   
 </Project>
