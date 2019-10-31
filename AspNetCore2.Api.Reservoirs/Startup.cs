@@ -28,11 +28,16 @@ namespace AspNetCore2.Api.Reservoirs
             services.AddMvc().AddMetrics();
         }
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             RunRequestsToSample();
 
-            app.UseMvc();
+            app.UseRouting();
+            
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
         }
 
         private static void RunRequestsToSample()

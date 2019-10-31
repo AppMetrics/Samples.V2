@@ -3,6 +3,7 @@ using App.Metrics;
 using App.Metrics.AspNetCore;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
 
 namespace AspNetCore2.Api.QuickStart
 {
@@ -13,8 +14,8 @@ namespace AspNetCore2.Api.QuickStart
             BuildWebHost(args).Run();
         }
 
-        public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
+        public static IHost BuildWebHost(string[] args) =>
+            Host.CreateDefaultBuilder(args)
 #if REPORTING
                 .ConfigureMetricsWithDefaults(builder =>
                 {
@@ -34,7 +35,10 @@ namespace AspNetCore2.Api.QuickStart
                 })
 #endif
                 .UseMetrics()
-                .UseStartup<Startup>()
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                })
                 .Build();
     }
 }
