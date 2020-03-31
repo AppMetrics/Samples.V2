@@ -24,7 +24,7 @@ namespace AspNetCore2.Api.Reservoirs
                 .ConfigureMetricsWithDefaults(builder =>
                 {
                     builder.Filter.With(filter);
-                    builder.Report.ToInfluxDb("http://127.0.0.1:32768", "appmetricsreservoirs", TimeSpan.FromSeconds(1));
+                    builder.Report.ToInfluxDb("http://127.0.0.1:8086", "appmetricsreservoirs", TimeSpan.FromSeconds(1));
                 })
                 .UseMetrics()
                 .ConfigureWebHostDefaults(webBuilder =>
