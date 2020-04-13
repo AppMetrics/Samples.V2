@@ -13,9 +13,8 @@
 		<PackageReference Include="App.Metrics" Version="4.0.0-*" />
 		<PackageReference Include="App.Metrics.AspNetCore.Mvc" Version="4.0.0-*" />
 		<PackageReference Include="App.Metrics.Reporting.Console" Version="4.0.0-*" />
-		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="2.3.0" />
-		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="2.2.0" />
-		<PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.1.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="4.1.1" />
 	</ItemGroup>
 
 </Project>

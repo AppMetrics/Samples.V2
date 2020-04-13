@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AspNetCore2.VersionedApi.QuickStart.Controllers
 {
+    [ApiController]
     [ApiVersion("2.0")]
     [Route("api/v{version:apiVersion}/values")]
     public class ValuesV2Controller : Controller

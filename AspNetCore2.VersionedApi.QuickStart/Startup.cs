@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -17,21 +18,13 @@ namespace AspNetCore2.VersionedApi.QuickStart
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services
-                .AddApiVersioning(options =>
-                {
-                    options.AssumeDefaultVersionWhenUnspecified = true;
-                    options.DefaultApiVersion = ApiVersion.Parse("1.1");
-                    options.ReportApiVersions = true;
-                });
+            services.AddControllers().AddMetrics();
+            services.AddApiVersioning(options =>
+            {
+                options.ReportApiVersions = true;
+                options.AssumeDefaultVersionWhenUnspecified = false;
+            });
 
-            services
-                .AddMvcCore()
-                .AddVersionedApiExplorer(o => o.GroupNameFormat = "v'VVV");
-
-            services
-                .AddMvc()
-                .AddMetrics();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -40,7 +33,7 @@ namespace AspNetCore2.VersionedApi.QuickStart
             
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapDefaultControllerRoute();
             });
         }
     }
