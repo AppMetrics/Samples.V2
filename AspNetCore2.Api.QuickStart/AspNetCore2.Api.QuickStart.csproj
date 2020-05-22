@@ -20,9 +20,9 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="App.Metrics" Version="4.0.0-*" />
-		<PackageReference Include="App.Metrics.AspNetCore.Mvc" Version="4.0.0-*" />
-		<PackageReference Include="App.Metrics.Reporting.Console" Version="4.0.0-*" />
+		<PackageReference Include="App.Metrics" Version="4.0.0" />
+		<PackageReference Include="App.Metrics.AspNetCore.Mvc" Version="4.0.0" />
+		<PackageReference Include="App.Metrics.Reporting.Console" Version="4.0.0" />
 	</ItemGroup>
 
 </Project>
